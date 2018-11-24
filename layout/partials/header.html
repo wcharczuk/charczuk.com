@@ -1,0 +1,25 @@
+{{ define "header" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .TitleOrDefault }}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <script src="/js/zepto.min.js"></script>
+</head>
+<body>
+  <div class="content">
+	<div class="left-content">
+		<div class="hero">
+			<h3><a href="/index.html">{{ .Config.Title }}</a></h3>
+		</div>
+		{{ template "list" . }}
+	</div>
+	<div class="right-content">
+{{ end }}

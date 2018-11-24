@@ -1,0 +1,12 @@
+{{ define "meta" }}
+<ul class="image-meta">
+	<li class="image-meta-header">Technical Details</li>
+	<li>{{ .Image.Exif.CameraModel }}</li>
+	<li>/</li>
+	<li>{{ .Image.Exif.FocalLength }}</li>
+	<li>/</li>
+	<li>{{ .Image.Exif.FNumber }}</li>
+	<li>/</li>
+	<li>{{ .Image.Exif.ExposureTime }}</li>
+</div>
+{{ end }}

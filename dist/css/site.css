@@ -1,0 +1,114 @@
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Avenir Next", sans-serif;
+}
+
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+
+.content {
+	height: 100vh;
+	display: flex;
+	margin-top: 25px;
+}
+
+.left-content {
+	flex-grow: 0;
+	min-width: 250px;
+	height: 100vh;
+	overflow: auto;
+	margin-right: 10px;
+}
+
+.right-content {
+	flex-grow: 1;
+}
+
+.hero {
+	text-align: center;
+}
+.hero a {
+	color: inherit;
+	text-decoration: inherit;
+}
+.hero a:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+.hero h3 {
+	font-size: 1.5em;
+}
+
+.post-image-wrapper{
+	text-align: center;
+}
+
+.post-title {
+	margin-bottom: 0px;
+}
+
+.post-location{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+img.post-image {
+	width: auto;
+	max-width: calc(100vw - 375px);
+	height: auto;
+	max-height: calc(100vh - 145px);
+}
+
+img.thumbnail {
+	width: auto;
+	max-width: 192px;
+	height: auto;
+	max-height: 192px;
+}
+
+ul.post-list {
+	list-style: none;
+	text-align: center;
+}
+
+ul.image-meta {
+	list-style: none
+}
+
+ul.image-meta li {
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+ul.image-meta li.image-meta-header {
+	text-decoration: none;
+	color: #8f989d;
+}
+
+ul.image-meta li:first-child {
+	margin-left: 0px;
+}
+ul.image-meta li:last-child {
+	margin-right: 0px;
+}
+
+a.nav-link-disabled {
+	visibility: hidden;
+}
+a.nav-link-disabled:hover {
+	visibility: hidden;
+}

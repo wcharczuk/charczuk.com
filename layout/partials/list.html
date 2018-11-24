@@ -1,0 +1,13 @@
+{{ define "list" }}
+<ul class="post-list">
+	{{ range $index, $post := .Posts }}
+	<li>
+		<a href="/{{ $post.SlugIndex }}">
+			<img class="thumbnail" src="/{{ $post.SourceSmall }}" />
+		</a>
+	</li>
+	{{ else }}
+	<li>No Posts</li>
+	{{ end }}
+</ul>
+{{ end }}
