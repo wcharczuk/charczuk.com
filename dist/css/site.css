@@ -21,7 +21,6 @@ body {
 .content {
 	height: 100vh;
 	display: flex;
-	margin-top: 25px;
 }
 
 .left-content {
@@ -44,6 +43,7 @@ a:hover {
 }
 
 .hero {
+	margin-top: 25px;
 	text-align: center;
 }
 .hero a {
@@ -55,7 +55,11 @@ a:hover {
 	text-decoration: inherit;
 }
 .hero h3 {
-	font-size: 1.5em;
+	font-size: 1.2em;
+}
+
+.post-content {
+	margin-top: 25px;
 }
 
 .post-image-wrapper{
@@ -85,11 +89,16 @@ img.thumbnail {
 	max-width: 192px;
 	height: auto;
 	max-height: 192px;
+	border: 2px solid #fff;
 }
 
 ul.post-list {
 	list-style: none;
 	text-align: center;
+}
+
+li.list-active img {
+	border: 2px solid #000;
 }
 
 ul.image-meta {

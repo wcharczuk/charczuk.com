@@ -1,7 +1,12 @@
 {{ define "list" }}
 <ul class="post-list">
+	{{ $current := .Post }}
 	{{ range $index, $post := .Posts }}
-	<li>
+	{{ $active := "" }}
+	{{ if $current.SlugIndex | eq $post.SlugIndex }}
+	{{ $active = "list-active" }}
+	{{ end }}
+	<li class="{{ $active }}">
 		<a href="/{{ $post.SlugIndex }}">
 			<img class="thumbnail" src="/{{ $post.SourceSmall }}" />
 		</a>
