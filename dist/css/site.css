@@ -36,6 +36,13 @@ body {
 	flex-grow: 1;
 }
 
+a {
+	color: inherit;
+}
+a:hover {
+	color: inherit;
+}
+
 .hero {
 	text-align: center;
 }
@@ -70,6 +77,7 @@ img.post-image {
 	max-width: calc(100vw - 375px);
 	height: auto;
 	max-height: calc(100vh - 145px);
+	cursor: pointer;
 }
 
 img.thumbnail {
@@ -111,4 +119,40 @@ a.nav-link-disabled {
 }
 a.nav-link-disabled:hover {
 	visibility: hidden;
+}
+
+.hidden {
+	display: none;
+}
+
+.lightbox {
+	position: fixed;
+	padding: 25px;
+	text-align: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	cursor: pointer;
+}
+
+.lightbox-close {
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	font-size: 18px;
+	color: #8f989d;
+	cursor: pointer;
+}
+
+.lightbox-close:hover {
+	color: #3c3c3c;
+}
+
+img.lightbox-image {
+	width: auto;
+	max-width: calc(100vw - 50px);
+	height: auto;
+	max-height: calc(100vh - 50px);
 }
