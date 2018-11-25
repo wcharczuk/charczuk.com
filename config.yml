@@ -1,10 +1,12 @@
 title: charczuk.com
-images: images
-output: dist
+author: Will Charczuk
+
+outputPath: dist
+postsPath: posts
+postTemplate: layout/post.html
+pagesPath: layout/pages
+partialsPath: layout/partials
+
 s3:
   region: us-east-1
   bucket: www.charczuk.com
-layout:
-  post: layout/post.html
-  pages: layout/pages
-  partials: layout/partials
