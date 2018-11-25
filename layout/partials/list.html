@@ -7,8 +7,9 @@
 	{{ $active = "list-active" }}
 	{{ end }}
 	<li class="{{ $active }}">
-		<a href="/{{ $post.SlugIndex }}">
-			<img class="thumbnail" src="/{{ $post.SourceSmall }}" />
+		<a name="{{ $index }}"></a>
+		<a href="/{{ $post.SlugIndex }}#{{$index}}">
+			<img class="thumbnail" src="/{{ $post.ImageSourceSmall }}" />
 		</a>
 	</li>
 	{{ else }}

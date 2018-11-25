@@ -8,12 +8,12 @@
 	</div>
 	<div class="two columns">
 		{{ if .HasPrevious }}
-		<a href="/{{.Previous.SlugIndex}}" class="nav-link nav-link-previous">Previous</a>
+		<a href="/{{.Previous.SlugIndex}}#{{ .Previous.Index }}" class="nav-link nav-link-previous">Previous</a>
 		{{ else }}
 		<a href="#" class="nav-link nav-link-disabled">Previous</a>
 		{{ end }}
 		{{ if .HasNext }}
-		<a href="/{{.Next.SlugIndex}}" class="nav-link nav-link-next">Next</a>
+		<a href="/{{.Next.SlugIndex}}#{{ .Next.Index }}" class="nav-link nav-link-next">Next</a>
 		{{ else }}
 		<a href="#" class="nav-link nav-link-disabled">Next</a>
 		{{ end }}
@@ -21,7 +21,7 @@
 </div>
 <div class="row">
 	<div class="twelve columns post-image-wrapper">
-		<img class="post-image" src="/{{ .SourceLarge }}"/>
+		<img class="post-image" src="/{{ .ImageSourceLarge }}"/>
 	</div>
 </div>
 <div class="row">
@@ -31,6 +31,6 @@
 </div>
 <div class="lightbox hidden">
 	<div class="lightbox-close">close</div>
-	<img class="lightbox-image" src="/{{ .SourceLarge }}"/>
+	<img class="lightbox-image" src="/{{ .ImageSourceLarge }}"/>
 </div>
 {{ end }}

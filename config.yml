@@ -8,5 +8,8 @@ pagesPath: layout/pages
 partialsPath: layout/partials
 
 s3:
-  region: us-east-1
-  bucket: www.charczuk.com
+  region: us-west-1
+  bucket: charczuk.com
+
+cloudfront:
+  distribution: E2IPGFOQCZDOJC
