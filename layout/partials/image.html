@@ -8,12 +8,12 @@
 	</div>
 	<div class="two columns">
 		{{ if .HasPrevious }}
-		<a href="/{{.Previous.SlugIndex}}#{{ .Previous.Index }}" class="nav-link nav-link-previous">Previous</a>
+		<a href="/{{.Previous.SlugIndex}}#image-{{ .Previous.Index }}" class="nav-link nav-link-previous">&#171; Previous</a>
 		{{ else }}
 		<a href="#" class="nav-link nav-link-disabled">Previous</a>
 		{{ end }}
 		{{ if .HasNext }}
-		<a href="/{{.Next.SlugIndex}}#{{ .Next.Index }}" class="nav-link nav-link-next">Next</a>
+		<a href="/{{.Next.SlugIndex}}#image-{{ .Next.Index }}" class="nav-link nav-link-next">Next &#187;</a>
 		{{ else }}
 		<a href="#" class="nav-link nav-link-disabled">Next</a>
 		{{ end }}
