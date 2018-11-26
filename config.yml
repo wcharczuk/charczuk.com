@@ -1,5 +1,6 @@
 title: charczuk.com
 author: Will Charczuk
+description: A photoblog generated with https://github.com/wcharczuk/photoblog
 
 outputPath: dist
 postsPath: posts

@@ -1,8 +1,9 @@
 html, body {
-	height: 100%;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
 }
 
 *, *:before, *:after {
@@ -41,7 +42,8 @@ a:hover {
 	flex-grow: 0;
 	min-width: 250px;
 	height: 100vh;
-	overflow: auto;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 	margin-right: 10px;
 }
 
@@ -178,7 +180,7 @@ a.nav-link-disabled:hover {
 .lightbox-close {
 	position: fixed;
 	top: 5px;
-	right: 5px;
+	right: 15px;
 	font-size: 18px;
 	color: #8f989d;
 	cursor: pointer;
