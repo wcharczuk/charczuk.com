@@ -51,6 +51,22 @@ a:hover {
 	flex-grow: 1;
 }
 
+@media (max-width: 550px) {
+	.right-content {
+		display:none;
+	}
+	.left-content {
+		overflow: unset;
+	}
+	.left-content .thumbnail {
+		width: auto;
+		max-width: 100vw;
+		height: auto;
+		max-height: 100vh;
+		border: 2px solid #fff;
+	}
+}
+
 .copyright {
 	text-align: center;
 	font-size: 10px;
