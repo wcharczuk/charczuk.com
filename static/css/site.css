@@ -51,22 +51,6 @@ a:hover {
 	flex-grow: 1;
 }
 
-@media (max-width: 550px) {
-	.right-content {
-		display:none;
-	}
-	.left-content {
-		overflow: unset;
-	}
-	.left-content .thumbnail {
-		width: auto;
-		max-width: 100vw;
-		height: auto;
-		max-height: 100vh;
-		border: 2px solid #fff;
-	}
-}
-
 .copyright {
 	text-align: center;
 	font-size: 10px;
@@ -92,6 +76,11 @@ a:hover {
 
 .post-content {
 	padding-top: 25px;
+}
+
+.post-header {
+	padding-left: 10px;
+	padding-right: 30px;
 }
 
 .post-image-wrapper{
@@ -272,4 +261,52 @@ img.lightbox-image {
 	transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
 	transition: background-color 0.5s, transform 0.5s ease-out;
 	transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+
+/*
+MOBILE STUFF
+*/
+
+@media (max-width: 550px) {
+	.post-list {
+		display:none;
+	}
+	.right-content {
+		position: absolute;
+		left: 0;
+		top: 100px;
+	}
+
+	.hero {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.post-header {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.post-header .eight.columns {
+		width: 50%;
+	}
+	.post-header .four.columns {
+		width: 50%;
+	}
+
+	img.post-image {
+		width: auto;
+		max-width: calc(100vw - 20px);
+		height: auto;
+		max-height: calc(100vh);
+	}
+
+	.lightbox {
+		padding: 20px;
+		padding-top: 35px;
+	}
 }
