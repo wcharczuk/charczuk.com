@@ -6,7 +6,7 @@
 	{{ if $current.SlugIndex | eq $post.SlugIndex }}
 	{{ $active = "list-active" }}
 	{{ end }}
-	<li class="{{ $active }}">
+	<li class="thumbnail-group {{ $active }}">
 		<a name="image-{{ $index }}"></a>
 		<a href="/{{ $post.SlugIndex }}#image-{{$index}}">
 			<img class="thumbnail" src="/{{ $post.ImageSourceSmall }}" />
