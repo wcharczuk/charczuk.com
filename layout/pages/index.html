@@ -1,5 +1,3 @@
 {{ template "header" . }}
-<div class="post-content">
-	{{ template "image" ( .Posts | first ) }}
-</div>
+{{ template "post" . }}
 {{ template "footer" .}}

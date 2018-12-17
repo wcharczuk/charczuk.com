@@ -2,34 +2,31 @@
 <div class="row post-header">
 	<div class="eight columns">
 		<h4 class="post-title">{{ .TitleOrDefault }}</h4>
-		{{ if .Meta.Location }}
-		<div class="post-location">{{ .Meta.Location }}</div>
+	</div>
+	<div class="four columns align-right post-nav">
+		{{ if .HasPrevious }}
+		<a href="/{{.Previous.SlugIndex}}#image-{{ .Previous.Index }}" class="nav-link nav-link-previous">&#171; Previous</a>
+		{{ else }}
+		<a href="#" class="nav-link nav-link-disabled">Previous</a>
+		{{ end }}
+		{{ if .HasNext }}
+		<a href="/{{.Next.SlugIndex}}#image-{{ .Next.Index }}" class="nav-link nav-link-next">Next &#187;</a>
+		{{ else }}
+		<a href="#" class="nav-link nav-link-disabled">Next</a>
 		{{ end }}
 	</div>
-	<div class="four columns align-right">
-		<div class="post-nav">
-			{{ if .HasPrevious }}
-			<a href="/{{.Previous.SlugIndex}}#image-{{ .Previous.Index }}" class="nav-link nav-link-previous">&#171; Previous</a>
-			{{ else }}
-			<a href="#" class="nav-link nav-link-disabled">Previous</a>
-			{{ end }}
-			{{ if .HasNext }}
-			<a href="/{{.Next.SlugIndex}}#image-{{ .Next.Index }}" class="nav-link nav-link-next">Next &#187;</a>
-			{{ else }}
-			<a href="#" class="nav-link nav-link-disabled">Next</a>
-			{{ end }}
-		</div>
+</div>
+<div class="row post-subheader">
+	<div class="six columns">
+		<span class="post-posted">{{ .Meta.Posted | date_long }}</span><span class="post-location">{{ .Meta.Location }}</span>
+	</div>
+	<div class="six columns post-tags align-right">
 		{{ template "image-tags" . }}
 	</div>
 </div>
-<div class="row">
-	<div class="twelve columns post-image-wrapper">
+<div class="row post">
+	<div class="post-image-container align-center">
 		<img class="post-image" src="/{{ .ImageSourceLarge }}"/>
-	</div>
-</div>
-<div class="row">
-	<div class="twelve columns align-center">
-		{{ template "meta" . }}
 	</div>
 </div>
 <div class="lightbox hidden">

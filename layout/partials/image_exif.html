@@ -1,0 +1,10 @@
+{{ define "image-exif" }}
+<ul class="image-exif">
+	<li class="image-exif-icon">{{ template "camera-icon" . }}</li>
+	<li class="image-exif-item">{{ .Image.Exif.CameraModel }}</li>
+	<li class="image-exif-item">{{ .Image.Exif.FocalLength }}</li>
+	<li class="image-exif-item">{{ .Image.Exif.FNumber }}</li>
+	<li class="image-exif-item">{{ .Image.Exif.ExposureTime }}</li>
+	<li class="image-exif-item">ISO {{ .Image.Exif.ISOSpeedRatings }}</li>
+</ul>
+{{ end }}

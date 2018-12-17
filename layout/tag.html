@@ -1,22 +1,3 @@
 {{ template "header" . }}
-<div class="tag-content">
-	<div class="row tag-header">
-	<div class="twelve columns">
-		<h4 class="tag-title">"{{ .Tag.Tag }}"</h4>
-	</div>
-	</div>
-	<div class="row">
-		<ul class="tag-post-list">
-			{{ range $index, $post := .Tag.Posts }}
-			<li class="thumbnail-group">
-				<a href="/{{ $post.SlugIndex }}#image-{{$index}}">
-					<img class="thumbnail" src="/{{ $post.ImageSourceSmall }}" />
-				</a>
-			</li>
-			{{ else }}
-			<li>No Posts</li>
-			{{ end }}
-		</ul>
-	</div>
-</div>
+{{ template "tag-posts" . }}
 {{ template "footer" .}}
