@@ -3,15 +3,18 @@ author: Will Charczuk
 description: A photoblog generated with https://github.com/wcharczuk/photoblog
 baseURL: charczuk.com
 
-outputPath: dist
-postsPath: posts
-postTemplate: layout/post.html
-pagesPath: layout/pages
-partialsPath: layout/partials
+# paths and templates
+outputPath: ./dist
+postsPath: ./posts
+postTemplate: ./layout/post.html
+tagTemplate: ./layout/tag.html
+pagesPath: ./layout/pages
+staticPath: ./static
+partialsPath: ./layout/partials
 
+# upload options
 s3:
   region: us-west-1
   bucket: charczuk.com
-
 cloudfront:
   distribution: E2IPGFOQCZDOJC
