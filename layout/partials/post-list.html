@@ -7,8 +7,8 @@
 	{{ $active = "list-active" }}
 	{{ end }}
 	<li class="thumbnail-group {{ $active }}">
-		<a name="image-{{ $index }}"></a>
-		<a href="/{{ $post.SlugIndex }}#image-{{$index}}">
+		<a name="{{ $post.Slug }}"></a>
+		<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
 			<img class="thumbnail" src="/{{ $post.ImageSourceSmall }}" />
 		</a>
 	</li>

@@ -11,7 +11,7 @@
 			<ul class="tag-post-list">
 				{{ range $index, $post := .Tag.Posts }}
 				<li class="thumbnail-group">
-					<a href="/{{ $post.SlugIndex }}#image-{{$index}}">
+					<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
 						<img class="thumbnail" src="/{{ $post.ImageSourceSmall }}" />
 					</a>
 				</li>
