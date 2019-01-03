@@ -68,7 +68,7 @@ li {
 	min-width: 250px;
 }
 .left-content .post-list {
-	height: calc(100vh - 111px);
+	height: calc(100vh - 135px);
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	margin: 0;
