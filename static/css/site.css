@@ -357,7 +357,6 @@ img.lightbox-image {
 	text-align: center;
 }
 
-
 .index-content {
 	margin-left: 25px;
 	margin-right: 25px;
@@ -390,7 +389,8 @@ img.thumbnail-large {
 	height: auto;
 	max-height: none;
 	max-width: 100%;
-	border: 2px solid var(--thumbnail-border-color);
+	border: 2px solid #fff;
+	margin-bottom: -7px;
 }
 
 /*
