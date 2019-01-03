@@ -66,9 +66,13 @@ li {
 	padding-right: 10px;
 	flex-grow: 0;
 	min-width: 250px;
-	height: 100vh;
+}
+.left-content .post-list {
+	height: calc(100vh - 111px);
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
+	margin: 0;
+	padding: 0;
 }
 
 .right-content {
