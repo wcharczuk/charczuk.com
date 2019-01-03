@@ -363,6 +363,7 @@ img.lightbox-image {
 	margin-right: 25px;
 }
 .column-group {
+	width: 100%;
 	text-align: center;
 }
 .column-group .post-list {
@@ -446,7 +447,7 @@ based on window widths
 */
 @media (max-width: 550px) {
 	.one.column-group {
-		display: table-cell;
+		display: table;
 	}
 	.two.column-group {
 		display: none;
@@ -463,7 +464,7 @@ based on window widths
 		display: none;
 	}
 	.two.column-group {
-		display: table-cell;
+		display: table;
 	}
 	.three.column-group {
 		display: none;
@@ -480,7 +481,7 @@ based on window widths
 		display: none;
 	}
 	.three.column-group {
-		display: table-cell;
+		display: table;
 	}
 	.four.column-group {
 		display: none;
@@ -498,6 +499,6 @@ based on window widths
 		display: none;
 	}
 	.four.column-group {
-		display: table-cell;
+		display: table;
 	}
 }
