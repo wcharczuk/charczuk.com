@@ -89,6 +89,7 @@ li {
 }
 
 .tag-content{
+	margin-top: 25px;
 	text-align: center;
 }
 
@@ -356,36 +357,33 @@ img.lightbox-image {
 }
 
 
-.index-content{
+.index-content {
 	margin-left: 25px;
 	margin-right: 25px;
 }
-.index-content .post-list {
-	display: inline-block;
-	vertical-align: top;
-}
-.index-content .column-group {
+.column-group {
 	text-align: center;
 }
-.index-content .column-group .post-list {
+.column-group .post-list {
 	text-align: center;
 	margin: 0;
 	padding: 0;
+	display: inline-block;
+	vertical-align: top;
 }
-.index-content .two.column-group .post-list {
+.two.column-group .post-list {
 	width: auto;
 	max-width: calc(50% - 10px);
 }
-.index-content .three.column-group .post-list {
+.three.column-group .post-list {
 	width: auto;
 	max-width: calc(33% - 10px);
 }
-.index-content .four.column-group .post-list {
+.four.column-group .post-list {
 	width: auto;
 	max-width: calc(25% - 10px);
 }
-
-.index-content img.thumbnail-large {
+img.thumbnail-large {
 	width: auto;
 	height: auto;
 	max-height: none;

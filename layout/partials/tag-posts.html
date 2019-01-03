@@ -1,0 +1,12 @@
+{{ define "tag-posts" }}
+<div class="tag-posts">
+	<div class="row tag-header">
+		<div class="twelve columns">
+			<h4 class="tag-title">Tagged <span class="tag-name">{{ .Tag.Tag }}</span></h4>
+		</div>
+	</div>
+	<div class="row">
+		{{ template "post-columns" .Tag.Posts }}
+	</div>
+</div>
+{{ end }}
