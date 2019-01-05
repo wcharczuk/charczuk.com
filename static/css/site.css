@@ -4,9 +4,9 @@
 	--text-dark-grey: #3c3c3c;
 
 	--default-margin: 25px;
-	--default-margin-small: 25px;
+	--default-margin-small: 10px;
 	--default-padding: 25px;
-	--default-padding-small: 25px;
+	--default-padding-small: 10px;
 
 	--thumbnail-size-large: 512px;
 	--thumbnail-size: 192px;
@@ -81,7 +81,7 @@ li {
 
 .copyright {
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: var(--default-margin-small);
 	font-size: 10px;
 	color: var(--text-dark-grey);
 }
@@ -89,6 +89,10 @@ li {
 .hero {
 	text-align: center;
 	display: block;
+	margin-bottom: var(--default-margin-small);
+}
+
+.left-content {
 	margin-bottom: var(--default-margin);
 }
 
@@ -120,16 +124,17 @@ li {
 
 .hero-social li {
 	display: inline-block;
-	margin: 5px;
+	margin: 7px;
+	vertical-align: top;
 }
-.hero-social  a, .hero-social  svg {
+
+.hero-social  a, .hero-social svg {
 	display: block;
 }
 
 .hero-social a {
-	position: relative;
-	height: 24px;
-	width: 24px;
+	height: 18px;
+	width: 18px;
 }
 
 .hero-social svg {
