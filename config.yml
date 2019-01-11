@@ -6,7 +6,8 @@ baseURL: charczuk.com
 # paths and templates
 outputPath: ./dist
 postsPath: ./posts
-postTemplate: ./layout/post.html
+imagePostTemplate: ./layout/image.html
+textPostTemplate: ./layout/text.html
 tagTemplate: ./layout/tag.html
 pagesPath: ./layout/pages
 staticPath: ./static

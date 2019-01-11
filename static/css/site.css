@@ -43,6 +43,10 @@ li {
 	padding: 0;
 }
 
+ol > li:before {
+	font-weight: bold;
+}
+
 .align-left {
 	text-align: left;
 }
@@ -409,7 +413,24 @@ img.lightbox-image {
 	margin-bottom: 75px;
 }
 
+.text-post-subheader {
+	font-weight: 500;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 640px;
+}
+
 .text-paragraph {
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 640px;
+}
+
+.text-paragraph.quote {
+	border-left: 5px solid #efefef;
+	padding-left: 10px;
 	margin-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;

@@ -9,7 +9,15 @@
 	{{ range $index, $post := .Posts }}
 	<entry>
 		<title>{{ $post.TitleOrDefault }}</title>
-		<content type="html"><div style="text-align: center"><img src="https://{{ $baseURL}}/{{ $post.ImageSourceMedium }}" /></div></content>
+		<content type="html">
+		{{ if ( $post.Image.IsZero | not ) }}
+			<div style="text-align: center">
+				<img src="https://{{ $baseURL}}/{{ $post.ImageSourceMedium }}" />
+			</div>
+		{{ else }}
+			{{ render $post }}
+		{{ end }}
+		</content>
 		<published>{{ $post.Meta.Posted | in_utc | rfc3339 }}</published>
 		<updated>{{ $post.Meta.Posted | in_utc | rfc3339 }}</updated>
 		<link href="https://{{ $baseURL }}/{{ $post.SlugIndex }}"/>
