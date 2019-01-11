@@ -1,8 +1,0 @@
-{{ define "image-tags" }}
-<ul class="image-tags">
-	{{ range $index, $tag := .Meta.Tags }}
-	<li class="image-tag"><a href="/tags/{{ $tag | slugify }}/index.html">{{ $tag }}</a></li>
-	{{ else }}
-	{{ end }}
-</ul>
-{{ end }}

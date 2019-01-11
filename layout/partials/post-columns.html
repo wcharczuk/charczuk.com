@@ -2,98 +2,58 @@
 <div class="one column-group">
 	<ul class="post-list">
 {{ range $index, $post := . }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 </div>
 <div class="two column-group">
 	<ul class="post-list">
 {{ range $index, $post := ( . | partition 0 2 ) }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 	<ul class="post-list">
 {{ range $index, $post := ( . | partition 1 2 ) }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 </div>
 <div class="three column-group">
 	<ul class="post-list">
 {{ range $index, $post := ( . | partition 0 3 ) }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 	<ul class="post-list">
 {{ range $index, $post := ( . | partition 1 3) }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 	<ul class="post-list">
 {{ range $index, $post := ( . | partition 2 3 ) }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 </div>
 <div class="four column-group">
 	<ul class="post-list">
 {{ range $index, $post := ( . | partition 0 4 ) }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 	<ul class="post-list">
 {{ range $index, $post := ( . | partition 1 4 ) }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 	<ul class="post-list">
 {{ range $index, $post := ( . | partition 2 4 ) }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 	<ul class="post-list">
 {{ range $index, $post := ( . | partition 3 4 ) }}
-		<li class="thumbnail-group">
-			<a href="/{{ $post.SlugIndex }}#{{ $post.Slug }}">
-				<img class="thumbnail-large" src="/{{ $post.ImageSourceMedium }}" />
-			</a>
-		</li>
+	{{ template "thumbnail-group" $post }}
 {{ end }}
 	</ul>
 </div>

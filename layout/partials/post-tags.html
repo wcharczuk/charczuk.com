@@ -1,0 +1,7 @@
+{{ define "post-tags" }}
+<ul class="post-tags">
+	{{ range $index, $tag := .Meta.Tags }}
+	<li class="post-tag"><a href="/tags/{{ $tag | slugify }}/index.html">{{ $tag }}</a></li>
+	{{ end }}
+</ul>
+{{ end }}
