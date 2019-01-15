@@ -1,15 +1,9 @@
-<div class="text-post-subheader">How'd you build this?</div>
+<div class="text-post-subheader">Why and how'd you build this?</div>
 <div class="text-paragraph">
 I wanted to write a quick post to go over how this blog is structured and what it's origin story was.
 </div>
 <div class="text-paragraph">
-This blog is built with a tool I made called <a href="https://github.com/wcharczuk/blogctl" target="_blank">blogctl</a>.
-</div>
-<div class="text-paragraph">
-The code for the blog itself is in a separate repo, <a href="https://github.com/wcharczuk/charczuk.com" target="_blank">charczuk.com</a>.
-</div>
-<div class="text-paragraph">
-I wanted a blog that:
+I wanted a blog that could:
 </div>
 <div class="text-paragraph quote">
 	<ol>
@@ -27,10 +21,17 @@ I wanted a blog that:
 Originally I used the fantastic <a href="https://gohugo.io" target="_blank">hugo</a>, but I ran into a bunch of limitations, namely how it handled images and not being able to generate thumbnails easily.
 </div>
 <div class="text-paragraph">
-One key consideration with this is the tool itself provides very little in producing the final output; it just enumerates the posts, renders the templates (some one for each post), and copies the files to S3 and invalidates the Cloudfront caches.
+So I ended up writing a tool called <a href="https://github.com/wcharczuk/blogctl" target="_blank">blogctl</a>. The name is a combination of <code>blog</code> and <code>control</code>, in the same vein as <code>kubectl</code> (something I use every day).
 </div>
 <div class="text-paragraph">
-The result is a pretty expressive way to build the blog, as I can play around with how it's formatted and the tool just provides the data to work with, golang templates handle the rest. Also, because it's hosted statically I don't have to worry about runtime components or scale problems.
+One key consideration with this is the tool itself provides very specific things in producing the final output; it enumerates the posts, renders given templates (some for each post), copies the files to S3 and invalidates the Cloudfront caches.
+It does not have any coupling to how the blog will eventually look or function, that is left to the individual implementations of blogs (very much like how hugo works).
+</div>
+<div class="text-paragraph">
+The code for this blog is in a separate repo, <a href="https://github.com/wcharczuk/charczuk.com" target="_blank">charczuk.com</a>, which includes all the post templates, static files like css, and the posted images themselves.
+</div>
+<div class="text-paragraph">
+The result is a pretty expressive way to build the blog, as I can play around with how it's formatted and the tool just processes the post data, golang templates handle the rest. Also, because it's hosted statically I don't have to worry about runtime components or scale problems.
 </div>
 <div class="text-paragraph">
 If you'd like to get started messing around with it, there are a couple helper commands (namely <code>blogctl init</code>) that will help you get started and create a shell blog for you.

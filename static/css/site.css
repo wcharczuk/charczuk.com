@@ -217,7 +217,7 @@ img.thumbnail {
 	width: auto;
 	max-width: var(--thumbnail-size);
 	height: auto;
-	max-height: var(--thumbnail-size);
+	max-height: none;
 	border: 2px solid #fff;
 }
 img.thumbnail:hover {
@@ -517,20 +517,19 @@ COLUMN VIEW
 these enable specific numbers of columns
 based on window widths
 */
-@media (max-width: 550px) {
-	.one.column-group {
-		display: table;
-	}
-	.two.column-group {
-		display: none;
-	}
-	.three.column-group {
-		display: none;
-	}
-	.four.column-group {
-		display: none;
-	}
+.one.column-group {
+	display: table;
 }
+.two.column-group {
+	display: none;
+}
+.three.column-group {
+	display: none;
+}
+.four.column-group {
+	display: none;
+}
+
 @media (min-width: 768px) {
 	.one.column-group {
 		display: none;
