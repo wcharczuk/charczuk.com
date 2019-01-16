@@ -72,7 +72,7 @@ ol > li:before {
 	min-width: 250px;
 }
 .left-content .post-list {
-	height: calc(100vh - 135px);
+	height: calc(100vh - 125px);
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	margin: 0;
@@ -407,7 +407,12 @@ img.lightbox-image {
 }
 
 .text-post-content {
-	margin-bottom: 25px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.text-post-content .copyright {
+  margin-top: 25px;
 }
 
 .text-post-subheader {
