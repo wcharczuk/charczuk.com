@@ -1,13 +1,23 @@
+{{ set_title . "About Me" }}
 {{ template "header" .}}
 {{ template "left-content" . }}
 <div class="right-content">
 	<div class="about-content">
 		<div class="row">
 			<div class="twelve columns">
-				<div class="headshot-outer"><img class="headshot" src="/images/headshot.jpg"/></div>
-				<h1 class="align-left">Hi I'm Will.</h1>
-				<h1 class="align-left">I'm a software developer based in San Francisco, CA.</h1>
-				<h1 class="align-left">I also occasionally take pictures.</h1>
+				<div class="about-bio">
+					<div class="headshot-outer align-center"><img class="headshot" src="/images/headshot.jpg"/></div>
+					<div class="about-greeting">Hi I'm <strong>Will</strong>.</div>
+					<div>I'm a software developer based in San Francisco, CA.</div>
+					<div>I also occasionally take pictures.</div>
+					<div class="about-open-source">
+						<div>I maintain a couple open source projects:</div>
+						<ul>
+							<li><strong>go-chart</strong> (1.9k stars) <a href="https://github.com/wcharczuk/go-chart" target="_blank">https://github.com/wcharczuk/go-chart</a></li>
+							<li><strong>blend/go-sdk</strong> <a href="https://github.com/blend/go-sdk" target="_blank">https://github.com/blend/go-sdk<a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
