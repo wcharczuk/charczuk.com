@@ -25,4 +25,8 @@
 		e.preventDefault();
 		$(".lightbox").addClass("hidden");
 	});
+	$("div[href]").on('click', function (e) {
+		window.location = $(this).attr("href");
+	});
+
 })(Zepto);

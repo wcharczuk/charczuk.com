@@ -1,4 +1,5 @@
 {{ define "post-columns" }}
+
 <div class="one column-group">
 	<ul class="post-list">
 {{ range $index, $post := . }}
@@ -35,26 +36,5 @@
 {{ end }}
 	</ul>
 </div>
-<div class="four column-group">
-	<ul class="post-list">
-{{ range $index, $post := ( . | partition 0 4 ) }}
-	{{ template "thumbnail-group" $post }}
-{{ end }}
-	</ul>
-	<ul class="post-list">
-{{ range $index, $post := ( . | partition 1 4 ) }}
-	{{ template "thumbnail-group" $post }}
-{{ end }}
-	</ul>
-	<ul class="post-list">
-{{ range $index, $post := ( . | partition 2 4 ) }}
-	{{ template "thumbnail-group" $post }}
-{{ end }}
-	</ul>
-	<ul class="post-list">
-{{ range $index, $post := ( . | partition 3 4 ) }}
-	{{ template "thumbnail-group" $post }}
-{{ end }}
-	</ul>
-</div>
+
 {{ end }}
