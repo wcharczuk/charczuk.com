@@ -10,7 +10,9 @@
 				<div class="sub-title-tags">{{ template "post-tags" . }}</div>
 			</div>
 		</div>
-		<img src="/{{ .ImageSourceMedium }}" />
+		<a href="/{{ .SlugIndex }}#{{ .Slug }}">
+			<img src="/{{ .ImageSourceMedium }}" />
+		</a>
 	</div>
 	{{- else -}}
 	<div class="text-thumbnail">
