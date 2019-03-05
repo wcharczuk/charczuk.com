@@ -171,6 +171,16 @@ ol > li:before {
 	transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
+.index-about {
+	font-size: 14px;
+	max-width: 640px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	padding: 10px;
+}
+
 .tag-content, .index-content {
 	width: 100%;
 	max-width: 1301px;
