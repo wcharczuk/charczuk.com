@@ -17,5 +17,6 @@ partialsPath: ./layout/partials
 s3:
   region: us-west-1
   bucket: charczuk.com
+
 cloudfront:
   distribution: E2IPGFOQCZDOJC
