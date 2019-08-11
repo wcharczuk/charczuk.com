@@ -9,12 +9,12 @@
 			</div>
 			<div class="four columns align-right post-nav">
 				{{ if .Post.HasPrevious }}
-				<a href="/{{ .Post.Previous.SlugIndex}}#{{ .Post.Previous.Slug }}" class="nav-link nav-link-previous">&#171; Previous</a>
+				<a href="/{{ .Post.Previous.IndexPath }}#{{ .Post.Previous.Slug }}" class="nav-link nav-link-previous">&#171; Previous</a>
 				{{ else }}
 				<a href="#" class="nav-link nav-link-disabled">Previous</a>
 				{{ end }}
 				{{ if .Post.HasNext }}
-				<a href="/{{ .Post.Next.SlugIndex}}#{{ .Post.Next.Slug }}" class="nav-link nav-link-next">Next &#187;</a>
+				<a href="/{{ .Post.Next.IndexPath }}#{{ .Post.Next.Slug }}" class="nav-link nav-link-next">Next &#187;</a>
 				{{ else }}
 				<a href="#" class="nav-link nav-link-disabled">Next</a>
 				{{ end }}

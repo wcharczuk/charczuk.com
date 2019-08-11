@@ -3,7 +3,7 @@
 	{{ $current := .Post }}
 	{{ range $index, $post := .Posts }}
 	{{ $active := "" }}
-	{{ if $current.SlugIndex | eq $post.SlugIndex }}
+	{{ if $current.IndexPath| eq $post.IndexPath }}
 	{{ $active = "list-active" }}
 	{{ end }}
 	<li class="thumbnail-group {{ $active }}">

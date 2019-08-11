@@ -2,21 +2,21 @@
 <div class="thumbnail">
 	{{- if ( .Image.IsZero | not ) -}}
 	<div class="image-thumbnail">
-		<div class="image-thumbnail-overlay" href="/{{ .SlugIndex }}#{{ .Slug }}">
-			<div class="title"><a href="/{{ .SlugIndex }}#{{ .Slug }}">{{ .TitleOrDefault }}</a></div>
+		<div class="image-thumbnail-overlay" href="/{{ .IndexPath }}#{{ .Slug }}">
+			<div class="title"><a href="/{{ .IndexPath }}#{{ .Slug }}">{{ .TitleOrDefault }}</a></div>
 			<div class="sub-title">
 				<div class="sub-title-posted">{{ .Meta.Posted | date_long }}</div>
 				<div class="sub-title-location">{{ .Meta.Location }}</div>
 				<div class="sub-title-tags">{{ template "post-tags" . }}</div>
 			</div>
 		</div>
-		<a href="/{{ .SlugIndex }}#{{ .Slug }}">
-			<img src="/{{ .ImageSourceMedium }}" />
+		<a href="/{{ .IndexPath }}#{{ .Slug }}">
+			<img src="/{{ .ImagePathMedium }}" />
 		</a>
 	</div>
 	{{- else -}}
 	<div class="text-thumbnail">
-		<div class="text-thumbnail-title"><a href="/{{ .SlugIndex }}#{{ .Slug }}">{{ .TitleOrDefault }}</a></div>
+		<div class="text-thumbnail-title"><a href="/{{ .IndexPath }}#{{ .Slug }}">{{ .TitleOrDefault }}</a></div>
 		<div class="text-thumbnail-posted">{{ .Meta.Posted | date_long }}</div>
 	</div>
 	{{- end -}}

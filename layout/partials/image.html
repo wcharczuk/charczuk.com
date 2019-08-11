@@ -5,12 +5,12 @@
 	</div>
 	<div class="four columns align-right post-nav">
 		{{ if .HasPrevious }}
-		<a href="/{{.Previous.SlugIndex}}#{{ .Previous.Slug }}" class="nav-link nav-link-previous">&#171; Previous</a>
+		<a href="/{{ .Previous.IndexPath }}#{{ .Previous.Slug }}" class="nav-link nav-link-previous">&#171; Previous</a>
 		{{ else }}
 		<a href="#" class="nav-link nav-link-disabled">Previous</a>
 		{{ end }}
 		{{ if .HasNext }}
-		<a href="/{{.Next.SlugIndex}}#{{ .Next.Slug }}" class="nav-link nav-link-next">Next &#187;</a>
+		<a href="/{{ .Next.IndexPath }}#{{ .Next.Slug }}" class="nav-link nav-link-next">Next &#187;</a>
 		{{ else }}
 		<a href="#" class="nav-link nav-link-disabled">Next</a>
 		{{ end }}
@@ -26,11 +26,11 @@
 </div>
 <div class="row post">
 	<div class="post-image-container align-center">
-		<img class="post-image" src="/{{ .ImageSourceLarge }}"/>
+		<img class="post-image" src="/{{ .ImagePathLarge }}"/>
 	</div>
 </div>
 <div class="lightbox hidden">
 	<div class="lightbox-close">close</div>
-	<img class="lightbox-image" src="/{{ .ImageSourceLarge }}"/>
+	<img class="lightbox-image" src="/{{ .ImagePathLarge }}"/>
 </div>
 {{ end }}

@@ -12,7 +12,7 @@
 		<content type="html">
 		{{ if ( $post.Image.IsZero | not ) }}
 			<div style="text-align: center">
-				<img src="https://{{ $baseURL}}/{{ $post.ImageSourceMedium }}" />
+				<img src="https://{{ $baseURL}}/{{ $post.ImagePathMedium }}" />
 			</div>
 		{{ else }}
 			{{ render $post }}
@@ -20,7 +20,7 @@
 		</content>
 		<published>{{ $post.Meta.Posted | in_utc | rfc3339 }}</published>
 		<updated>{{ $post.Meta.Posted | in_utc | rfc3339 }}</updated>
-		<link href="https://{{ $baseURL }}/{{ $post.SlugIndex }}"/>
+		<link href="https://{{ $baseURL }}/{{ $post.IndexPath }}"/>
 		<id>tag:{{ $baseURL }},{{ $post.Meta.Posted | in_utc | time_format "2006-01-02" }}:/{{ $post.Slug }}</id>
 		<author>
 			<name>{{ $author }}</name>
