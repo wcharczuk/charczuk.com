@@ -8,7 +8,7 @@
 	{{ end }}
 	<li class="thumbnail-group {{ $active }}">
 		<a name="{{ $post.Slug }}"></a>
-		{{ template "thumbnail"	$post }}
+		{{ template "thumbnail-small" $post }}
 	</li>
 	{{ else }}
 	<li>No Posts</li>

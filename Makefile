@@ -1,9 +1,9 @@
 all: build deploy
 
 server:
-	@blogctl server --static=./static
+	@blogctl server --static=./static --cached
 
-build: 
+build:
 	@blogctl build
 
 deploy:
