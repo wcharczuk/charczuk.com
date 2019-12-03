@@ -1,5 +1,5 @@
-{{ define "thumbnail-large" }}
-<div class="thumbnail thumbnail-large">
+{{ define "thumbnail-medium" }}
+<div class="thumbnail thumbnail-medium">
 	{{- if ( .Image.IsZero | not ) -}}
 	<div class="image-thumbnail">
 		<div class="image-thumbnail-overlay" href="/{{ .IndexPath }}#{{ .Slug }}">
@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<a href="/{{ .IndexPath }}#{{ .Slug }}">
-			<img src="/{{ .ImagePathLarge }}" />
+			<img src="/{{ .ImagePathMedium }}" />
 		</a>
 	</div>
 	{{- else -}}

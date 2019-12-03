@@ -268,7 +268,7 @@ img.post-image {
 	margin-right: auto;
 }
 
-.thumbnail-group-large .thumbnail {
+.thumbnail-group-medium .thumbnail, .thumbnail-group-large .thumbnail {
 	max-width: 100%;
 }
 
@@ -323,10 +323,23 @@ img.post-image {
 }
 
 .text-thumbnail {
-	height: 127px;
 	text-align: center;
 	margin: 0;
-	padding: 16px;
+	padding: 0;
+}
+
+.thumbnail-medium .text-thumbnail, .thumbnail-large .text-thumbnail {
+	height: 200px;
+	padding-top: 40px;
+	font-size: 24px;
+	border: 5px solid #efefef;
+}
+
+.thumbnail-small .text-thumbnail {
+	height: 100px;
+	padding-top: 20px;
+	font-size: 12px;
+	border: 2px solid #efefef;
 }
 
 .text-thumbnail-posted {
