@@ -563,6 +563,9 @@ img.lightbox-image {
 .three.column-group .post-list {
 	width: 33%;
 }
+.four.column-group .post-list {
+	width: calc(25% - 10px);
+}
 
 /*
 MOBILE STUFF
@@ -656,5 +659,20 @@ based on window widths
 	}
 	.four.column-group {
 		display: none;
+	}
+}
+
+@media (min-width: 1600px) {
+	.one.column-group {
+		display: none;
+	}
+	.two.column-group {
+		display: none;
+	}
+	.three.column-group {
+		display: none;
+	}
+	.four.column-group {
+		display: table;
 	}
 }
