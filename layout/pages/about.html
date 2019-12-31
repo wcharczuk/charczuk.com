@@ -1,41 +1,22 @@
 {{ set_title . "About Me" }}
-{{ template "header" .}}
-{{ template "left-content" . }}
-<div class="right-content">
-	<div class="about-content">
-		<div class="row about-bio about-section">
-			<div class="twelve columns">
-				<div class="headshot-outer align-center"><img class="headshot" src="/images/headshot.jpg"/></div>
-				<div class="about-greeting">Hi I'm <strong>Will</strong>.</div>
-				<div>I'm a software developer based in San Francisco, CA.</div>
-				<div>I also occasionally take pictures.</div>
-			</div>
-		</div>
-		<div class="row about-oss about-section">
-			<div class="twelve columns">
-				<div>I maintain a couple open source projects:</div>
-				<ul>
-					<li><strong>go-chart</strong> (1.9k stars) <a href="https://github.com/wcharczuk/go-chart" target="_blank">https://github.com/wcharczuk/go-chart</a></li>
-					<li><strong>blend/go-sdk</strong> <a href="https://github.com/blend/go-sdk" target="_blank">https://github.com/blend/go-sdk</a></li>
-				</ul>
-			</div>
-		</div>
-	<!--
-		<div class="row about-newsletter about-section">
-			<div class="twelve columns">
-				<form class="about-newsletter-form" action="https://tinyletter.com/wcharczuk" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/wcharczuk', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-					<div>
-						<div class="input-header">I also publish a newsletter (<a href="https://tinyletter.com/wcharczuk" target="_blank">If /dev/null could talk</a>):</div>
-						<input type="text" class="u-full-width" name="email" id="tlemail" placeholder="you@domain.com" />
-					</div>
-					<div>
-						<input type="submit" class="button-primary" value="Subscribe"/>
-					</div>
-					<input type="hidden" value="1" name="embed"/>
-				</form>
-			</div>
-		</div>
-	-->
-	</div>
+{{ template "header" . }}
+<div class="about-content">
+  <div class="row about-bio about-section">
+    <div class="twelve columns">
+      <div class="headshot-outer align-center"><img class="headshot" src="/images/headshot.jpg"/></div>
+      <div class="about-greeting">Hi I'm <strong>Will</strong>.</div>
+      <div>I'm a software developer based in San Francisco, CA.</div>
+      <div>I also occasionally take pictures.</div>
+    </div>
+  </div>
+  <div class="row about-oss about-section">
+    <div class="twelve columns">
+      <div>I maintain a couple open source projects:</div>
+      <ul>
+        <li><strong>go-chart</strong> (1.9k stars) <a href="https://github.com/wcharczuk/go-chart" target="_blank">https://github.com/wcharczuk/go-chart</a></li>
+        <li><strong>blend/go-sdk</strong> <a href="https://github.com/blend/go-sdk" target="_blank">https://github.com/blend/go-sdk</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 {{ template "footer" .}}

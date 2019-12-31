@@ -1,0 +1,9 @@
+{{ define "thumbnail" }}
+<div class="thumbnail">
+	{{- if not .Image.IsZero -}}
+	{{ template "image-thumbnail" . }}
+	{{- else -}}
+	{{ template "text-thumbnail" . }}
+	{{- end -}}
+</div>
+{{- end -}}
