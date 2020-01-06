@@ -3,7 +3,8 @@ title: Green Apple Books
 location: Clement Street, San Francisco, CA
 comments: ""
 tags:
-- monochrome
-- street
-- san francisco
-extra: {}
+  - monochrome
+  - street
+  - san francisco
+  - fuji
+  - digital
