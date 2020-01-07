@@ -1,29 +1,4 @@
 {{ define "image" }}
-<div class="row post-header">
-	<div class="eight columns">
-		<h4 class="post-title">{{ .TitleOrDefault }}</h4>
-	</div>
-	<div class="four columns align-right post-nav">
-		{{ if .HasPrevious }}
-		<a href="/{{ .Previous.IndexPath }}#{{ .Previous.Slug }}" class="nav-link nav-link-previous">&#171; Previous</a>
-		{{ else }}
-		<a href="#" class="nav-link nav-link-disabled">Previous</a>
-		{{ end }}
-		{{ if .HasNext }}
-		<a href="/{{ .Next.IndexPath }}#{{ .Next.Slug }}" class="nav-link nav-link-next">Next &#187;</a>
-		{{ else }}
-		<a href="#" class="nav-link nav-link-disabled">Next</a>
-		{{ end }}
-	</div>
-</div>
-<div class="row post-subheader">
-	<div class="six columns">
-		<span class="post-posted">{{ .Meta.Posted | date_long }}</span><span class="post-location">{{ .Meta.Location }}</span>
-	</div>
-	<div class="six columns post-tags">
-		{{ template "post-tags" . }}
-	</div>
-</div>
 <div class="row post">
 	<div class="post-image-container align-center">
 		<img class="post-image" src="/{{ .ImagePathLarge }}"/>

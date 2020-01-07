@@ -1,3 +1,6 @@
-{{ template "text-post-header" . }}
-{{ render .Post }}
-{{ template "text-post-footer" . }}
+{{ template "header" . }}
+{{ template "hero" . }}
+{{ template "post_header" .Post }}
+{{ render_post .Post }}
+{{ template "post_footer" .Post }}
+{{ template "footer" . }}

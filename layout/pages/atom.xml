@@ -15,7 +15,7 @@
 				<img src="https://{{ $baseURL}}/{{ $post.ImagePathMedium }}" />
 			</div>
 		{{ else }}
-			{{ render $post }}
+			{{ render_post $post }}
 		{{ end }}
 		</content>
 		<published>{{ $post.Meta.Posted | in_utc | rfc3339 }}</published>
