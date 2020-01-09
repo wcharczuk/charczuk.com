@@ -31,10 +31,37 @@
 })(Zepto);
 
 ; (function ($) {
-	$("#hero-post-image").on('click', function (e) {
+	$(".hero-enter-button").on('click', function (e) {
 		e.preventDefault();
-		var $indexTop = $("#index-top");
-		var indexTopOffset = $indexTop.offset().top;
-		window.scrollTo(0, indexTopOffset);
+		$("#index-content .thumbnail").addClass("shown");
+		smoothScroll($("#index-top"), 500);
 	});
 })(Zepto);
+
+function easeInOutQuart(t) {
+	const t1 = t - 1
+	return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * t1 * t1 * t1 * t1
+}
+
+function scroll($el) {
+	var indexTopOffset = $el.offset().top;
+	window.scrollTo(0, indexTopOffset);
+}
+
+function smoothScroll($to, duration) {
+	var to = $to.offset().top
+	var el = $(window)
+	var initial = el.scrollTop()
+	var dest = to - initial
+	var start = null
+	function step(timestamp) {
+		if (!start) start = timestamp
+		var progress = timestamp - start
+		var percentage = progress / duration
+		var tick = (easeInOutQuart(percentage) * dest) + initial
+		window.scrollTo(0, tick)
+		if (progress < duration) { window.requestAnimationFrame(step) }
+		else { return }
+	}
+	window.requestAnimationFrame(step)
+}

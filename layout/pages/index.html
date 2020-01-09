@@ -2,12 +2,15 @@
 {{ template "header" . }}
 <div class="hero-post">
 	<div class="post-image-container align-center">
-    <img id="hero-post-image" class="post-image" src="/{{ (.Posts | first).ImagePathLarge }}"/>
+    	<img class="post-image" src="/{{ (.Posts | first).ImagePathLarge }}"/>
+		<div class="hero-enter hero-hidden">
+			<a class="hero-enter-button" href="#">View Gallery</a>
+		</div>
 	</div>
 </div>
 <div id="index-top"></div>
 {{ template "hero" . }}
-<div class="index-content">
+<div id="index-content">
   {{ template "post-columns" .Posts }}
 </div>
 {{ template "footer" .}}
