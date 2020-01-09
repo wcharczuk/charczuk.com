@@ -134,18 +134,17 @@ ol > li:before {
 	width: 100%;
 }
 .hero-social .icon {
-	color:  var(--text-dark-grey);
-	fill:  var(--text-dark-grey);
-}
-.hero-social .icon:hover {
 	border-radius: 100%;
 	color: var(--text-light-grey);
 	fill: var(--text-light-grey);
-	-webkit-transform: scale(1.25);
-	transform: scale(1.25);
-	transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
-	transition: background-color 0.5s, transform 0.5s ease-out;
-	transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+	transform: scale(1.0);
+	transition: fill 0.5s, color 0.5s, transform 0.5s;
+}
+.hero-social .icon:hover {
+	color: var(--text-dark-grey);
+	fill: var(--text-dark-grey);
+	transform: scale(1.15);
+	transition: fill 0.5s, color 0.5s, transform 0.5s;
 }
 
 .copyright {
