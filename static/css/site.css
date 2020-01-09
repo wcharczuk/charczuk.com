@@ -156,11 +156,6 @@ ol > li:before {
 }
 
 /* page elements */
-
-#index-content .thumbnail {
-	display:none;
-}
-
 .hero-post img.post-image {
 	margin-top: var(--default-margin);
 	max-width: calc(100vw - 40px);

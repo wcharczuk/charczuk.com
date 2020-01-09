@@ -33,7 +33,6 @@
 ; (function ($) {
 	$(".hero-enter-button").on('click', function (e) {
 		e.preventDefault();
-		$("#index-content .thumbnail").addClass("shown");
 		smoothScroll($("#index-top"), 500);
 	});
 })(Zepto);
