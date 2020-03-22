@@ -176,9 +176,13 @@ ol > li:before {
 	opacity: 0.8;
 }
 
+.post-image-container {
+  position: relative;
+}
+
 .hero-enter {
 	position: absolute;
-	top: calc(20% + 75px);
+	bottom: calc(10% + 75px);
 	left: calc(50% - 100px);
 }
 .hero-enter-button {

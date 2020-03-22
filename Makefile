@@ -1,6 +1,6 @@
 all: build deploy
 
-server:
+run:
 	@blogctl server --static=./static
 
 build:
