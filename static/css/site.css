@@ -156,6 +156,9 @@ ol > li:before {
 }
 
 /* page elements */
+.hero-post {
+	position: relative;
+}
 .hero-post img.post-image {
 	margin-top: var(--default-margin);
 	max-width: calc(100vw - 40px);
@@ -163,19 +166,19 @@ ol > li:before {
 }
 .hero-hidden {
 	opacity: 0.0;
-	transition: opacity 0.25s;
+	transition: opacity 0.5s;
 }
 .hero-post img:hover ~ .hero-hidden {
-	opacity: 1.0;
+	opacity: 0.8;
 	transition: opacity 0.5s;
 }
 .hero-enter:hover {
-	opacity: 1.0;
+	opacity: 0.8;
 }
 
 .hero-enter {
 	position: absolute;
-	top: calc(50% - 75px);
+	top: calc(20% + 75px);
 	left: calc(50% - 100px);
 }
 .hero-enter-button {
@@ -539,6 +542,16 @@ MOBILE STUFF
 	img.thumbnail-large {
 		max-height: none;
 	}
+  .hero {
+    display: block;
+  }
+  .hero-left, .hero-right {
+    display: block;
+  }
+}
+
+@media(max-width: 1024px) {
+  .hero-post { display: none }
 }
 
 /*
@@ -546,17 +559,18 @@ COLUMN VIEW
 these enable specific numbers of columns
 based on window widths
 */
+
 .one.column-group {
-	display: flex;
+  display: flex;
 }
 .two.column-group {
-	display: none;
+  display: none;
 }
 .three.column-group {
-	display: none;
+  display: none;
 }
 .four.column-group {
-	display: none;
+  display: none;
 }
 
 @media (min-width: 768px) {
