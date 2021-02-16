@@ -20,7 +20,7 @@ jobs:
         go-version: 1.15
 
     - name: Install Blogctl
-      run: go install github.com/wcharczuk/blogctl
+      run: go get github.com/wcharczuk/blogctl
 
     - name: Build
       run: blogctl build
