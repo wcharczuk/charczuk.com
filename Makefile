@@ -1,4 +1,4 @@
-all: build deploy
+all: build
 
 run:
 	@blogctl server --static=./static
