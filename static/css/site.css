@@ -2,7 +2,7 @@
 	--text-white: #fff;
 	--text-light-grey: #BCBCBC;
 	--text-dark-grey: #3C3C3C;
-	--text-color: #000;
+	--text-color: #404040;;
 
 	--font-size-large: 32px;
 	--font-size: 14px;
@@ -172,9 +172,6 @@ ol > li:before {
 	opacity: 0.8;
 	transition: opacity 0.5s;
 }
-.hero-enter:hover {
-	opacity: 0.8;
-}
 
 .post-image-container {
   position: relative;
@@ -182,8 +179,12 @@ ol > li:before {
 
 .hero-enter {
 	position: absolute;
+    width: 180px;
 	bottom: calc(10% + 75px);
-	left: calc(50% - 100px);
+	left: calc(50% - 90px);
+}
+.hero-enter:hover {
+	opacity: 0.8;
 }
 .hero-enter-button {
 	text-transform: uppercase;
