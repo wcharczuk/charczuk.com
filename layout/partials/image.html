@@ -1,11 +1,11 @@
 {{ define "image" }}
 <div class="row post">
 	<div class="post-image-container align-center">
-		<img class="post-image" src="/{{ .ImagePathLarge }}"/>
+		<img class="post-image" loading="lazy" src="/{{ .ImagePathLarge }}"/>
 	</div>
 </div>
 <div class="lightbox hidden">
 	<div class="lightbox-close">close</div>
-	<img class="lightbox-image" src="/{{ .ImagePathLarge }}"/>
+	<img class="lightbox-image" loading="lazy" src="/{{ .ImagePathLarge }}"/>
 </div>
 {{ end }}
