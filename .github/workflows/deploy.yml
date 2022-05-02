@@ -20,7 +20,7 @@ jobs:
         go-version: 1.18
 
     - name: Install Blogctl
-      run: go get go.charczuk.com/project/blogctl@latest
+      run: go install go.charczuk.com/project/blogctl@latest
 
     - name: Build
       run: blogctl build
