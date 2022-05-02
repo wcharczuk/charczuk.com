@@ -2,7 +2,7 @@
 <div class="text-thumbnail">
 	<div class="text-thumbnail-contents">
 		<div class="text-thumbnail-title"><a href="/{{ .IndexPath }}#{{ .Slug }}">{{ .TitleOrDefault }}</a></div>
-		<div class="text-thumbnail-posted">{{ .Meta.Posted | date_long }}</div>
+		<div class="text-thumbnail-posted">{{ .Meta.Posted | time_format_date_long }}</div>
 	</div>
 </div>
 {{ end }}
