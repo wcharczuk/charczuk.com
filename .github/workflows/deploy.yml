@@ -17,10 +17,10 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: 1.15
+        go-version: 1.18
 
     - name: Install Blogctl
-      run: go get github.com/wcharczuk/blogctl
+      run: go get go.charczuk.com/project/blogctl
 
     - name: Build
       run: blogctl build
