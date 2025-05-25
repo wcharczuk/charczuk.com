@@ -21,7 +21,7 @@ jobs:
         go-version: 1.21
 
     - name: Install Blogctl
-      run: go install go.charczuk.com/project/blogctl@latest
+      run: go install github.com/wcharczuk/go/project/blogctl@latest
 
     - name: Build
       run: blogctl build
